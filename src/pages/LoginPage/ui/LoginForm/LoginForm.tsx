@@ -3,7 +3,6 @@ import {classNames} from "../../../../shared/lib/classNames/classNames.ts";
 import {Input} from "../../../../shared/ui/Input";
 import PassIcon from "../../../../shared/assets/icon/icon-pass.svg?react"
 import SmsIcon from "../../../../shared/assets/icon/sms-edit.svg?react"
-import loginPage from "../LoginPage.tsx";
 
 
 interface LoginFormProps {
