@@ -1,0 +1,45 @@
+.EmployeeListPage {
+  width: 100%;
+  height: calc(100vh - var(--navbar-height));;
+  background: var(--bg-color);
+}
+
+.employee_filter {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.input {
+  width: 310px;
+}
+
+.btn_positions {
+  position: relative;
+  &__items{
+    width: 165px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+}
+
+.btn_filter {
+  position: relative;
+  &__block{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+}

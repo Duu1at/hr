@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/static/Nunito-Black.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Nunito Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/static/Nunito-Black.ttf') format('ttf');
+}
+
+:root {
+  --font-family-main: 'Nunito', Serif;
+
+  --font-size-xs: 10px;
+  --font-line-xs: 13.64px;
+  --font-xs: var(--font-size-xs) / var(--font-line-xs) var(--font-family-main);
+
+  --font-size-s: 12px;
+  --font-line-s: 16.37px;
+  --font-s: var(--font-size-s) / var(--font-line-s) var(--font-family-main);
+
+  --font-size-m: 14px;
+  --font-line-m: 20px;
+  --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+
+  --font-size-l: 24px;
+  --font-line-l: 32px;
+  --font-l: var(--font-size-l) / var(--font-line-l) 'Nunito Bold', var(--font-family-main);
+
+
+  --font-size-regular: 24px;
+  --font-line-regular: 32px;
+  --font-regular: var(--font-size-regular) / var(--font-line-regular) 'Nunito Regular', var(--font-family-main);
+
+
+
+  --border: rgba(227, 227, 227, 1);
+
+
+  // Размеры
+  --navbar-height: 75px;
+
+
+  --z-index:5
+}
+

@@ -1,0 +1,13 @@
+.Profile{
+  height: calc(100vh - var(--navbar-height));;
+  background: yellow;
+  display: flex;
+  .profile{
+    &_right{
+      width: 624px;
+    }
+    &_left{
+      width: 256px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.Navbar {
+  width: 100%;
+  height: var(--navbar-height);
+  background: var(--primary-color);
+}
+
+.navbar_item {
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar_block{
+  position: relative;
+}
+
+.avatar {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logOut{
+  width: 212px;
+  position: absolute;
+  z-index: var(--z-index);
+  top:60px;
+  right: 0;
+  padding: 8px 15px;
+  border-radius: 6px;
+  background:var(--primary-color);
+  &_avatar{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 10px;
+    &__indent{
+      margin-right: 10px;
+    }
+  }
+  .listtile__indent{
+    margin-bottom: 10px;
+  }
+}
+

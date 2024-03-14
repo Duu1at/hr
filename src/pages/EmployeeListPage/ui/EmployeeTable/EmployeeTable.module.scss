@@ -1,0 +1,60 @@
+
+.employeeTable {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  th,
+  td {
+    padding: 12px 8px;
+  }
+
+
+  img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+  }
+}
+
+.employee_table__header {
+  height: 50px;
+  background: var(--secondary-color);
+}
+
+
+.employee_cells {
+  border-bottom: 2px solid var(--border-color);
+  background: var(--primary-color);
+}
+
+.cell {
+  &_avatar_name {
+    width: 260px;
+
+    &__block {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &_position {
+    width: 155px;
+  }
+
+  &_phone {
+    width: 132px;
+  }
+
+  &_email {
+    width: 200px;
+  }
+
+  &_dob {
+    width: 74px;
+  }
+
+  &_id {
+    width: 40px;
+  }
+}

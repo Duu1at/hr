@@ -1,0 +1,45 @@
+.Button {
+  cursor: pointer;
+  padding: 11px 16px;
+  border-radius: 8px;
+}
+
+.clear {
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.outline {
+  border: 2px solid var(--border);
+  background: var(--primary-color);
+}
+.filled{
+  border: none;
+  background: var(--accent-color);
+}
+.text_btn{
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  color: var(--title-color);
+}
+
+
+.size_m {
+  font: var(--font-m);
+}
+
+.size_l {
+  font: var(--font-l);
+}
+
+.size_xl {
+  font: var(--font-xl);
+}
+
+.disabled {
+  opacity: 0.5;
+}

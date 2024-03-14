@@ -1,0 +1,27 @@
+.round_checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font: var(--font-m);
+}
+
+.checkmark {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.checkmark:after {
+  display: flex;
+  align-items: center;
+
+  height: 14px;
+  width: 14px;
+  border: 1px solid black;
+  position: absolute;
+  border-radius: 50%;
+  background:  none;
+}
+

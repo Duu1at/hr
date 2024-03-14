@@ -1,0 +1,47 @@
+.PositionsDropDown {
+  width: 260px;
+
+  position: absolute;
+  top: 45px;
+  left: 0;
+
+  .positionsDropDown {
+    &_content {
+      border-radius: 8px 8px 0 0;
+      padding: 4px 8px;
+      background: var(--primary-color);
+      box-shadow: 0px 4px 8px 0px rgba(1, 74, 139, 0.04);
+      margin-bottom: 2px;
+
+      &__filter {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5px;
+        margin-bottom: 10px;
+
+        .input {
+          padding: 5px;
+        }
+      }
+      &__result{
+        padding: 5px 0;
+      }
+    }
+
+    &_btns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--primary-color);
+      gap: 4px;
+
+      &__btn {
+        width: 50%;
+        border-radius: 8px;
+        padding: 12px 10px;
+        box-shadow: 0px 4px 8px 0px rgba(1, 74, 139, 0.04);
+      }
+    }
+  }
+}
