@@ -4,7 +4,8 @@ import {
 import cls from './Button.module.scss';
 import {classNames, Mods} from "../../lib/classNames/classNames.ts";
 
- enum ButtonTheme {
+// eslint-disable-next-line react-refresh/only-export-components
+export enum ButtonTheme {
     CLEAR = 'clear',
     OUTLINE = 'outline',
     SECONDARY = 'secondary',
@@ -13,7 +14,8 @@ import {classNames, Mods} from "../../lib/classNames/classNames.ts";
 }
 
 
- enum ButtonSize {
+// eslint-disable-next-line react-refresh/only-export-components
+export enum ButtonSize {
     M = 'size_m',
     L = 'size_l',
     XL = 'size_xl',
