@@ -43,7 +43,7 @@ const SocialCard = ({className, facebook, whatsApp, telegram}: SocialCardProps) 
                         leading={WhatsApp}
                         title={"whats’app"}
                     >
-                        <AppLink to={whatsApp}>
+                        <AppLink to={"wa.me/996 702 313611"}>
                             <Text
                                 text={whatsApp}
                                 color={"blue"}
@@ -56,7 +56,7 @@ const SocialCard = ({className, facebook, whatsApp, telegram}: SocialCardProps) 
                         leading={Telegram}
                         title={"telegram"}
                     >
-                        <AppLink to={telegram}>
+                        <AppLink to={"https://t.me/Duulat004"}>
                             <Text
                                 text={telegram}
                                 color={"blue"}
