@@ -3,7 +3,7 @@ import {EmployeeListPage} from "../../../pages/EmployeeListPage";
 import {PesonalPage} from "../../../pages/PesonalPage";
 import {AuthPage} from "../../../pages/AuthPage";
 import {LoginPage} from "../../../pages/LoginPage";
-import {Profile} from "../../../pages/Profile";
+import {EditProfile, ProfileData} from "../../../pages/Profile";
 
 
 export enum AppRoutes {
@@ -12,14 +12,16 @@ export enum AppRoutes {
     AUTH = 'auth',
     LOGIN = 'login',
     PROFILE = 'profile',
+    EDIT_PROFILE='edit_profile'
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
-    [AppRoutes.EMPLOYEE_LIST_PAGE]: '/profile',
+    [AppRoutes.EMPLOYEE_LIST_PAGE]: '/',
     [AppRoutes.PERSONAL]: '/personal',
     [AppRoutes.AUTH]: '/auth',
     [AppRoutes.LOGIN]: '/login',
-    [AppRoutes.PROFILE]: '/',
+    [AppRoutes.PROFILE]: '/profile',
+    [AppRoutes.EDIT_PROFILE]:'/edit_profile'
 }
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
@@ -41,6 +43,10 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
     },
     [AppRoutes.PROFILE]: {
         path: RoutePath.profile,
-        element: <Profile/>
+        element: <ProfileData/>
+    },
+    [AppRoutes.EDIT_PROFILE]: {
+        path: RoutePath.edit_profile,
+        element: <EditProfile/>
     },
 }

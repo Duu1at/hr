@@ -4,14 +4,14 @@
   display: flex;
   margin: 0 auto;
 
-
   .login {
     width: 62%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    &_text{
+
+    &_text {
       width: 646px;
       margin-bottom: 70px;
       font-size: 48px;
@@ -19,17 +19,19 @@
       line-height: 65px;
       color: var(--accent-color);
     }
-    &_small__text{
+
+    &_small__text {
       width: 352px;
       font: var(--font-regular);
     }
-    &_top{
+
+    &_top {
       margin-bottom: 80px;
     }
+
     &__btn {
       color: var(--primary-color);
-      box-shadow: 0px 4px 8px 0px rgba(1, 74, 139, 0.04);
-
+      box-shadow: 0 4px 8px 0 rgba(1, 74, 139, 0.04);
     }
   }
 

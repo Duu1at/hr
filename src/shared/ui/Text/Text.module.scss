@@ -1,4 +1,4 @@
-.primary{
+.primary {
   color: var(--color);
   //.title {
   //  color: var(--color);
@@ -56,23 +56,64 @@
 
 .size_m {
   .title {
-    font: var(--font-l-redesigned);
+    font: var(--font-l);
   }
 
   .text {
-    font: var(--font-m-redesigned);
+    font: var(--font-m);
   }
 }
 
 .size_l {
   .title {
-    font: var(--font-xl-redesigned);
+    font: var(--font-l);
   }
 
   .text {
-    font: var(--font-l-redesigned);
+    font: var(--font-l);
   }
 }
+
+.size_xl {
+  .title {
+    font: var(--font-xl);
+  }
+
+  .text {
+    font: var(--font-xl);
+  }
+}
+
+.color_blue {
+  .text {
+    color: rgba(1, 74, 139, 1);
+  }
+}
+
+.color_grey {
+  .text {
+    color: rgba(114, 114, 114, 1);
+  }
+}
+.color_black{
+  .title {
+    color: var(--color);
+  }
+
+  .text {
+    color: var(--color);
+  }
+}
+.color_red {
+  .title {
+    color: red;
+  }
+
+  .text {
+    color: yellow;
+  }
+}
+
 
 .bold {
   .title {

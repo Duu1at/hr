@@ -15,11 +15,18 @@
   border: 2px solid var(--border);
   background: var(--primary-color);
 }
-.filled{
+
+.secondary {
+  border: none;
+  background: var(--primary-color);
+}
+
+.filled {
   border: none;
   background: var(--accent-color);
 }
-.text_btn{
+
+.text_btn {
   padding: 0;
   border: none;
   background: none;

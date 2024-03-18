@@ -1,3 +1,5 @@
-import {ProfileAsync} from "../Profile/ui/Profile.async.tsx";
+import {ProfileDataAsync} from "./ProfileData/ProfileData.async.tsx"
+import {EditProfileAsync} from "./EditProfile/EditProfile.async.tsx"
 
-export { ProfileAsync as Profile };
+export {ProfileDataAsync as ProfileData}
+export {EditProfileAsync as EditProfile}

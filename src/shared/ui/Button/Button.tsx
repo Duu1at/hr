@@ -4,15 +4,16 @@ import {
 import cls from './Button.module.scss';
 import {classNames, Mods} from "../../lib/classNames/classNames.ts";
 
-export enum ButtonTheme {
+ enum ButtonTheme {
     CLEAR = 'clear',
     OUTLINE = 'outline',
+    SECONDARY = 'secondary',
     TEXT_BTN = 'text_btn',
-    FILLED="filled"
+    FILLED = "filled"
 }
 
 
-export enum ButtonSize {
+ enum ButtonSize {
     M = 'size_m',
     L = 'size_l',
     XL = 'size_xl',

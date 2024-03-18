@@ -2,6 +2,8 @@ import cls from './ListTile.module.scss'
 import {classNames} from "../../lib/classNames/classNames.ts";
 import React from "react";
 import {Icon} from "../Icon";
+import {HStack} from "../Stack/HStack/HStack.tsx";
+import {FlexGap} from "../Stack/Flex";
 
 
 interface ListTileProps {
@@ -11,6 +13,7 @@ interface ListTileProps {
     onClick?: () => void;
     width?: number;
     height?: number;
+    gap?: FlexGap;
 }
 
 const ListTile = (props: ListTileProps) => {
@@ -20,17 +23,26 @@ const ListTile = (props: ListTileProps) => {
         title,
         width,
         height,
-        onClick
+        onClick,
+        gap = "12"
     } = props
+
     return (
-        <div onClick={onClick} className={classNames(cls.ListTile, {}, [className])}>
-            {leading &&
-                <Icon
-                    width={width}
-                    height={height}
-                    Svg={leading}
-                    className={cls.icon}/>}
-            <p>{title}</p>
+        <div onClick={onClick}>
+            <HStack align={"center"}
+                    justify={"start"}
+                    gap={gap}
+                    className={classNames(cls.ListTile, {}, [className])}
+            >
+                {leading &&
+                    <Icon
+                        width={width}
+                        height={height}
+                        Svg={leading}
+                    />
+                }
+                <p>{title}</p>
+            </HStack>
         </div>
     );
 };

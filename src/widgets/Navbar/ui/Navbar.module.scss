@@ -34,14 +34,14 @@
   padding: 8px 15px;
   border-radius: 6px;
   background:var(--primary-color);
+  box-shadow: 0 4px 8px 0 rgba(1, 74, 139, 0.04);
+
   &_avatar{
+    width: 85%;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     margin-bottom: 10px;
-    &__indent{
-      margin-right: 10px;
-    }
   }
   .listtile__indent{
     margin-bottom: 10px;

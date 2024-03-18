@@ -1,8 +1,18 @@
 .primary {
-  color: var(--text-color);
+  color:rgba(1, 74, 139, 1);
 
   &:hover {
-    color: var(--accent-redesigned);
+   opacity: 0.9;
   }
 }
 
+.red {
+  color: red;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.text{
+  text-underline: none;
+}

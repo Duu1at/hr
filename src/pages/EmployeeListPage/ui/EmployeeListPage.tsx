@@ -11,6 +11,7 @@ import {Text} from "../../../shared/ui/Text";
 import {useState} from "react";
 import FilterDropDownBtn from "./FillterDropDownBtn/FilterDropDownBtn.tsx";
 import PositionsDropDown from "./PositionsDropDown/PositionsDropDown.tsx";
+import {Navbar} from "../../../widgets/Navbar";
 
 function EmployeeListPage() {
 
@@ -64,6 +65,7 @@ function EmployeeListPage() {
 
     return (
         <div className={cls.EmployeeListPage}>
+            <Navbar/>
             <div className={'container'}>
                 <div className={cls.employee_filter}>
                     <div className={cls.employee_filter__item}>
@@ -96,7 +98,6 @@ function EmployeeListPage() {
 
                 </div>
                 <EmployeeTable employees={employees}/>
-
 
 
             </div>
