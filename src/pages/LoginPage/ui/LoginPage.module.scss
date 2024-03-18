@@ -6,22 +6,18 @@
 
   .login {
     width: 62%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     &_text {
-      width: 646px;
       margin-bottom: 70px;
       font-size: 48px;
       font-weight: 700;
       line-height: 65px;
-      color: var(--accent-color);
+      text-align: center;
+      color: var(--title-color);
     }
 
     &_small__text {
-      width: 352px;
+      text-align: center;
       font: var(--font-regular);
     }
 
@@ -42,12 +38,11 @@
     justify-content: center;
     align-items: center;
     background: var(--accent-color);
+    color: white;
 
     &_block {
-      padding: 0 125px;
-
       .big_text {
-        color: white;
+        text-align: center;
         font-size: 32px;
         font-weight: 700;
         line-height: 44px;
@@ -58,33 +53,20 @@
       }
 
       .small_text {
-        color: white;
-        font-size: 24px;
-        line-height: 33px;
+        font: var(--font-xl);
         margin-bottom: 100px;
+        text-align: center;
       }
     }
 
-    &_link {
-      display: flex;
-      align-items: center;
+    .title {
+      font: var(--font-xl);
 
-      &__text {
+      .link {
         color: white;
-        font-size: 24px;
         font-weight: 700;
-        line-height: 33px;
-        margin-right: 5px;
-      }
-
-      &__navigate {
-        color: white;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 33px;
+        padding-left: 8px;
       }
     }
-
-
   }
 }
