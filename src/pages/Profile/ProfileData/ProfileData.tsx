@@ -32,9 +32,9 @@ const ProfileData = ({className}: ProfileProps) => {
                             industry={"Отдел программного обеспечения"}
                         />
                         <SocialCard
-                            whatsApp={"wa.me/770879665"}
+                            whatsApp={"wa.me/996 702 313611"}
                             facebook={"facebook@karimova_karina"}
-                            telegram={"t.me@kkarina"}
+                            telegram={"https://t.me/Duulat004"}
                         />
                     </VStack>
                     <VStack gap={"32"} className={cls.profile_right}>

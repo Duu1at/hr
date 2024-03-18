@@ -7,6 +7,7 @@ import ProfileCard from "../../../ui/ProfileCard/ProfileCard.tsx";
 import Facebook from "../../../../../shared/assets/icon/facebook.svg?react"
 import Telegram from "../../../../../shared/assets/icon/telegram.svg?react"
 import WhatsApp from "../../../../../shared/assets/icon/whathApp.svg?react"
+import {AppLink} from "../../../../../shared/ui/AppLink";
 
 
 interface SocialCardProps {
@@ -29,30 +30,39 @@ const SocialCard = ({className, facebook, whatsApp, telegram}: SocialCardProps) 
                         leading={Facebook}
                         title={"facebook"}
                     >
-                        <Text
-                            color={"blue"}
-                            text={facebook}
-                        />
+                        <AppLink to={"https://ru-ru.facebook.com/"}>
+                            <Text
+                                color={"blue"}
+                                text={facebook}
+                            />
+                        </AppLink>
+
                     </ProfileCard>
 
                     <ProfileCard
                         leading={WhatsApp}
                         title={"whats’app"}
                     >
-                        <Text
-                            text={whatsApp}
-                            color={"blue"}
-                        />
+                        <AppLink to={whatsApp}>
+                            <Text
+                                text={whatsApp}
+                                color={"blue"}
+                            />
+                        </AppLink>
+
                     </ProfileCard>
 
                     <ProfileCard
                         leading={Telegram}
                         title={"telegram"}
                     >
-                        <Text
-                            text={telegram}
-                            color={"blue"}
-                        />
+                        <AppLink to={telegram}>
+                            <Text
+                                text={telegram}
+                                color={"blue"}
+                            />
+                        </AppLink>
+
                     </ProfileCard>
                 </VStack>
             </BaseContainer>
